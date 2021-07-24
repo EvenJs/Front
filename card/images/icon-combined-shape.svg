@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Cards-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ui-cards-alejandro-cuffia" transform="translate(-615.000000, -195.000000)" fill="#FFFFFF">
+            <g id="card2" transform="translate(470.000000, 90.000000)">
+                <g id="Icon" transform="translate(145.000000, 105.000000)">
+                    <path d="M50,25 C50,38.8065789 38.8065789,50 25,50 C11.1934211,50 0,38.8065789 0,25 C0,11.1934211 11.1934211,0 25,0 C38.8065789,0 50,11.1934211 50,25 Z M23.0660898,16.035288 C21.2273971,14.8094928 19.7368421,15.610725 19.7368421,17.8251822 L19.7368421,30.8590284 C19.7368421,33.0733548 21.2222775,33.8781308 23.0660898,32.6489226 L32.1970681,26.5616038 C34.0357608,25.3358086 34.0408804,23.351815 32.1970681,22.1226068 L23.0660898,16.035288 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

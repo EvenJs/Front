@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+}
+
+.card {
+    min-width: 300px;
+    height: 200px;
+    background: linear-gradient(90deg, hsla(55, 96%, 69%, 1) 0%, hsla(184, 69%, 43%, 1) 42%, hsla(343, 88%, 63%, 1) 100%);
+    margin: 2%;
+}

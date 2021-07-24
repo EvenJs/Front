@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Cards-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="ui-cards-alejandro-cuffia" transform="translate(-1288.000000, -415.000000)" stroke="#FFFFFF" stroke-width="3">
+            <g id="cta1" transform="translate(1230.000000, 390.000000)">
+                <g id="icon" transform="translate(60.000000, 27.000000)">
+                    <path d="M29.2857143,30 L0.714285714,30 C0.32,30 0,29.68 0,29.2857143 L0,0.714285714 C0,0.32 0.32,0 0.714285714,0 L29.2857143,0 C29.68,0 30,0.32 30,0.714285714 L30,29.2857143 C30,29.68 29.68,30 29.2857143,30 Z" id="Stroke-366"></path>
+                    <path d="M1.36364286,29.6428571 L9.42364286,16.0064286" id="Stroke-368"></path>
+                    <path d="M17.7272857,29.6428571 L9.66728571,16.0064286" id="Stroke-370"></path>
+                    <g id="Group-6" opacity="0.5" transform="translate(19.000000, 22.000000)">
+                        <path d="M0.0909285714,6.96107143 L4.79235714,0.143214286" id="Stroke-372"></path>
+                        <path d="M9.63635714,6.96107143 L4.93492857,0.143214286" id="Stroke-374"></path>
+                    </g>
+                    <path d="M24.5454286,10.5519286 C24.5454286,12.8112143 22.714,14.6426429 20.4547143,14.6426429 C18.1954286,14.6426429 16.3632857,12.8112143 16.3632857,10.5519286 C16.3632857,8.29264286 18.1954286,6.46121429 20.4547143,6.46121429 C22.714,6.46121429 24.5454286,8.29264286 24.5454286,10.5519286 L24.5454286,10.5519286 Z" id="Stroke-376"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
