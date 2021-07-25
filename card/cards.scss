@@ -1,0 +1,102 @@
+body {
+    background-color: gray;
+    align-items: center;
+}
+.card1 {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 1em;
+    width: 300px;
+    position: relative;
+   
+    &__top {
+        height: 170px;
+        display: flex;
+        justify-content: flex-end;
+        background-image:url("./images/bg-3.png") ;
+        background-size: cover;
+        background-position: center;
+
+        &__tag {
+            margin-top: 5%;
+            margin-right: 5%;
+            position: absolute;
+           
+           
+        }
+    }
+
+    &__bot { 
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 200px;
+     
+        &__title {
+            font-weight: bold;
+        }
+
+        &__button{
+            height: 30px;
+            width: 100px;
+            position: absolute;
+            top: 70%;
+            left: 30%;
+            z-index: 100;
+        }
+
+        &__shader {
+            position: absolute;
+            background-image:  linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+            z-index: 50;
+            top: 200px;
+            left: 10%;
+            height:180px;
+            width: 300px;
+        }
+    }
+}
+
+.card2 {
+    background-image: url("./images/bg-2.png");
+    width: 500px;
+    height: 280px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &__top{
+        
+        
+    }
+
+    &__bot{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.card3 {
+    background-image: url("./images/bg-1.png");
+    width: 300px;
+    height: 500px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+.tag {
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.ViewButton {
+    background:linear-gradient(90deg, rgba(36,41,166,1) 0%, rgba(106,187,240,1) 94%) ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
