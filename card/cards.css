@@ -1,6 +1,6 @@
-body {
-  background-color: gray;
-  align-items: center;
+.container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card1 {
@@ -50,6 +50,7 @@ body {
 }
 
 .card2 {
+  overflow: hidden;
   background-image: url("./images/bg-2.png");
   width: 500px;
   height: 280px;
@@ -66,6 +67,7 @@ body {
 }
 
 .card3 {
+  overflow: hidden;
   background-image: url("./images/bg-1.png");
   width: 300px;
   height: 500px;
