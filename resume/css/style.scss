@@ -1,0 +1,99 @@
+body {
+  max-width: 1200px;  
+  min-width: 600px;
+  margin: 0 auto;
+  background-image:url("../img/main_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navi {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.title {
+  width: 50%;
+  padding: 0;
+  line-height: 40px;
+}
+
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu ul {
+  list-style: none;
+  line-height: 40px;
+  margin-left: 0;
+ }
+
+ .menu li {
+  display: block;
+  float: left;
+  margin: 2px 10%;
+ }
+
+ .home {
+  border: red solid 3px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgreen;
+    background-image: url("../img/multi-purpose-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    .photoWrapper {
+      
+      border: darkslateblue solid 3px;
+      padding-left: 8%;
+      .photo {
+        max-height: 280px;
+        max-width: 280px;
+        min-height: 180px;
+        min-width: 180px;
+      }
+    }
+
+    .intro{
+      border: darkslateblue solid 3px;
+      width:35%;
+      padding-right: 8%;
+    
+    }
+  }  
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    
+
+    &__aboutMe {
+      border:darkorange solid 3px;
+      width: 40%;
+     
+    }
+
+    &__detail {
+      border: blue solid 3px;
+      width: 40%;
+    }
+  }
+
+ }
