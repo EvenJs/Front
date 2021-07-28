@@ -2,7 +2,8 @@
 <html>
 <head>
   <link rel="stylesheet" href="./css/style.css">
-  <meta name=”viewport” content=”width=device-width, initial-scale=1″ />
+  <meta name=”viewport” content="width=device-width, initial-scale=1" />
+  <script defer src="../resume/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
   <title></title>
 </head>
 
@@ -23,21 +24,25 @@
   </header>
 
   <main>
-    <div class="home hidden">
+    <div class="home ">
       <div class="home__heading">
         <div class="photoWrapper">
           <img src="../resume/img/photo.png" alt="John Smith" class="photo">
         </div>
         <div class="intro">
-          <p> John Smith</p>
-          <p> Wed Developer</p>
-          <div class="home__media"></div>
+          <p class="intro__name"> John Smith</p>
+          <p class="intro__occupation"> Wed Developer</p>
+          <div class="intro__media">
+            <a href=#><i class="fab fa-facebook-square fa-3x" ></i></a>
+            <a href=#><i class="fab fa-twitter-square fa-3x"></i></a>
+            <a href=#><i class="fab fa-instagram-square fa-3x"></i></a>
+          </div>
         </div>
       </div>
       <div class="home__content">
         <div class="home__content__aboutMe">
-          <p class="aboutMe_title">About Me</p>
-          <p class="aboutMe_text"> 
+          <p class="aboutMe__title">About Me</p>
+          <p class="aboutMe__text"> 
             Hello! I'm John Doe. Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit. Aenean fermentum 
             ullamcorper sem, at placerat dolor volutpat ac. 
@@ -45,10 +50,29 @@
           </p>
         </div>
         <div class="home__content__detail">
-          Hello! I'm John Doe. Lorem ipsum dolor sit amet, 
-          consectetur adipiscing elit. Aenean fermentum 
-          ullamcorper sem, at placerat dolor volutpat ac. 
-          Duis nulla enim, condimentum nec ultricies.
+            <ul class="personalInfo">
+              <li> 
+                <p class="personalInfo__key">Age</p> 
+                <p class="personalInfo__value">29</p>
+              </li>
+              <li>
+                <p class="personalInfo__key">Residence</p> 
+                <p class="personalInfo__value">Australia</p>
+              </li>
+              <li>
+                <p class="personalInfo__key">Address</p>
+                <p class="personalInfo__value">Level3 / 57 Coronation Drive, Brisbane</p>
+              </li>
+              <li>
+                <p class="personalInfo__key">E-mail</p>
+                <p class="personalInfo__value">info@jiangren.com.au</p>
+              </li>
+              <li>
+                <p class="personalInfo__key">Phone</p>
+                <p class="personalInfo__value"> +0123 123 456 789</p>
+              </li>
+
+            </ul>
         </div>
       </div>
     </div>
@@ -226,7 +250,7 @@
         </div>
       </div>
     </div>
-    <div class="blog ">
+    <div class="blog hidden">
       <div class="page__heading">
         <p class="page__title"> Blog</p>
       </div>

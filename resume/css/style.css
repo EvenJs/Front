@@ -1,6 +1,6 @@
 body {
   max-width: 1200px;
-  min-width: 180px;
+  min-width: 400px;
   margin: 0 auto;
   background-image: url("../img/main_bg.png");
   background-repeat: no-repeat;
@@ -49,13 +49,14 @@ main {
 }
 
 .home {
-  border: red solid 3px;
+  box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   overflow: hidden;
 }
 .home__heading {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   background-color: lightgreen;
   background-image: url("../img/multi-purpose-background.png");
   background-position: center;
@@ -63,31 +64,81 @@ main {
   background-size: cover;
 }
 .home__heading .photoWrapper {
-  border: darkslateblue solid 3px;
-  padding-left: 8%;
-}
-.home__heading .photoWrapper .photo {
-  max-height: 280px;
-  max-width: 280px;
+  margin: 3% 0;
+  height: 37.3%;
+  width: 26%;
   min-height: 180px;
   min-width: 180px;
 }
+.home__heading .photoWrapper .photo {
+  width: 100%;
+  height: 100%;
+}
 .home__heading .intro {
-  border: darkslateblue solid 3px;
   width: 35%;
-  padding-right: 8%;
+  padding-right: 3%;
+  color: white;
+  text-align: center;
+  min-width: 210px;
+}
+.home__heading .intro__name {
+  margin-top: 20%;
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.home__heading .intro__occupation {
+  font-weight: bold;
+}
+.home__heading .intro__media {
+  display: flex;
+}
+.home__heading .intro__media a {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 .home__content {
   display: flex;
-  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .home__content__aboutMe {
-  border: darkorange solid 3px;
-  max-width: 40%;
+  max-width: 45%;
+  min-width: 210px;
+  padding-left: 5%;
+}
+.home__content__aboutMe .aboutMe__title {
+  font-size: large;
+  font-weight: bold;
+}
+.home__content__aboutMe .aboutMe__text {
+  font-size: small;
 }
 .home__content__detail {
-  border: blue solid 3px;
-  max-width: 40%;
+  width: 50%;
+  min-width: 210px;
+}
+.home__content__detail ul {
+  list-style: none;
+  margin: 0;
+  padding: 5%;
+}
+.home__content__detail ul li {
+  display: flex;
+  line-height: 5%;
+}
+.home__content__detail ul li .personalInfo__key {
+  font-size: small;
+  width: 50%;
+  margin-right: 5%;
+}
+.home__content__detail ul li .personalInfo__value {
+  width: 100%;
+  font-size: small;
+  color: gray;
 }
 
 .resume {
