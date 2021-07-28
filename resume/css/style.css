@@ -31,13 +31,11 @@ main {
   display: flex;
   justify-content: space-evenly;
 }
-
 .menu ul {
   list-style: none;
   line-height: 40px;
   margin-left: 0;
 }
-
 .menu li {
   display: block;
   float: left;
@@ -142,29 +140,34 @@ main {
 }
 
 .resume {
-  border: red solid 3px;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
 }
 .resume__heading {
   background-color: lightgreen;
 }
 .resume__contentWrapper {
-  border: blue solid 2px;
-  border-radius: 5px;
   display: flex;
   justify-content: space-between;
 }
 .resume .education__title {
   font-size: large;
   font-weight: bold;
-  padding-left: 10%;
+  padding-left: 8%;
 }
 .resume .education__contentWrapper {
   border-left: gray solid 3px;
-  width: 50%;
-  padding-left: 10%;
-  margin-left: 10px;
+  width: 100%;
+  padding-top: 1%;
+  margin-left: 5%;
+  padding-bottom: 1%;
+}
+.resume .education__contentWrapper .education__block {
+  border-left: green solid 3px;
+  margin: 8%;
+  padding-left: 8%;
+  box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
 }
 .resume .experience__title {
   font-size: large;
@@ -173,9 +176,16 @@ main {
 }
 .resume .experience__contentWrapper {
   border-left: gray solid 3px;
-  width: 50%;
-  padding-left: 10%;
-  margin-left: 10px;
+  width: 100%;
+  padding-top: 1%;
+  margin-left: 5%;
+  padding-bottom: 1%;
+}
+.resume .experience__contentWrapper .experience__block {
+  border-left: green solid 3px;
+  margin: 8%;
+  padding-left: 8%;
+  box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
 }
 .resume__skills {
   border: black solid 2px;
@@ -188,36 +198,102 @@ main {
 }
 
 .services {
-  border: red solid 3px;
   border-radius: 5px;
   overflow: hidden;
 }
-
-.myServices__contentWrapper {
+.services .page__contentWrapper {
+  padding: 2% 4%;
+}
+.services .myServices__title {
+  font-weight: bolder;
+}
+.services .myServices__contentWrapper {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  flex-wrap: wrap;
+}
+.services .myServices__block {
+  width: 20%;
+  min-width: 200px;
+  padding: 1%;
+}
+.services .myServices__block .block__icon {
+  background-color: grey;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8%;
+}
+.services .myServices__block .block__icon img {
+  height: 64px;
+  width: 64px;
+}
+.services .myServices__block .block__title {
+  font-weight: bold;
+  margin-bottom: 8%;
+}
+.services .clients__logoWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.services .clients__logoWrapper .clients__logo img {
+  width: 100px;
+  height: 100px;
 }
 
 .blog {
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
 }
 .blog .page__contentWrapper {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.blog .page__contentWrapper .blog__block {
+  max-width: 450px;
+  text-align: center;
+  margin: 2% 0;
+  box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.blog .page__contentWrapper .blog__block img {
+  width: 100%;
+  height: 100%;
+}
+.blog .page__contentWrapper .blog__block__tag {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border: white solid 1px;
+  background-color: white;
+  color: yellowgreen;
+  width: 30px;
+  font-weight: bold;
+  font-size: small;
+}
+.blog .page__contentWrapper .blog__block__type {
+  color: grey;
+  font-size: small;
+  margin: 1% auto;
+}
+.blog .page__contentWrapper .blog__block__title {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
 
 .contact .page__contentWrapper {
   display: flex;
   justify-content: space-evenly;
-}
-
-.clients__logoWrapper {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .page__heading {
@@ -235,10 +311,6 @@ main {
   font-weight: bolder;
   font-size: xx-large;
   color: white;
-}
-
-.page__contentWrapper {
-  border: green solid 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
