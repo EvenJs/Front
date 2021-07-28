@@ -1,6 +1,6 @@
 body {
   max-width: 1200px;  
-  min-width: 600px;
+  min-width: 180px;
   margin: 0 auto;
   background-image:url("../img/main_bg.png");
   background-repeat: no-repeat;
@@ -36,15 +36,19 @@ main {
   list-style: none;
   line-height: 40px;
   margin-left: 0;
- }
+}
 
- .menu li {
+.menu li {
   display: block;
   float: left;
   margin: 2px 10%;
- }
+}
 
- .home {
+.hidden{
+  display: none;
+}
+
+.home {
   border: red solid 3px;
   border-radius: 5px;
   overflow: hidden;
@@ -82,18 +86,148 @@ main {
   &__content {
     display: flex;
     justify-content: space-evenly;
+
     
 
     &__aboutMe {
       border:darkorange solid 3px;
-      width: 40%;
-     
+      max-width: 40%;
+      
     }
 
     &__detail {
       border: blue solid 3px;
-      width: 40%;
+      max-width: 40%;
+    }
+  }
+}
+
+.resume {
+  border: red solid 3px;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__heading {
+    background-color: lightgreen;
+  }
+
+  &__contentWrapper {
+    border: blue solid 2px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .education {
+
+    &__title{
+      font-size: large;
+      font-weight: bold;
+      padding-left: 10%;
+    }
+
+    &__contentWrapper {
+      border-left: gray solid 3px;
+      width: 50%;
+      padding-left: 10%;
+      margin-left: 10px;
+
     }
   }
 
- }
+  .experience {
+    &__title{
+      font-size: large;
+      font-weight: bold;
+      padding-left: 10%;
+    }
+
+    &__contentWrapper {
+      border-left: gray solid 3px;
+      width: 50%;
+      padding-left: 10%;
+      margin-left: 10px;
+
+    }
+  }
+
+  &__skills {
+    border: black solid 2px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .skill_title {
+      font-size: large;
+      font-weight: bold;
+    }
+  }
+
+  
+
+}
+
+.services {
+  border: red solid 3px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.myServices {
+  &__contentWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    //flex-wrap: wrap;
+  
+  } 
+}
+
+.blog {
+  border-radius: 5px;
+  overflow: hidden;
+  .page__contentWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+.contact {
+  .page__contentWrapper{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+}
+
+
+
+.clients__logoWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+
+
+.page__heading {
+  background-color: lightgreen;
+  background-image: url("../img/multi-purpose-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.page__title {
+  margin: 0;
+  padding: 3% 0;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: white;
+}
+.page__contentWrapper {
+  border: green solid 3px;
+}
