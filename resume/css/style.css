@@ -236,7 +236,6 @@ span {
           width: 50%;
 
         }
-
   */
 }
 .resume__skills .skillBlock .skill__name {
@@ -312,18 +311,31 @@ span {
   height: 64px;
   width: 64px;
 }
+.services .myServices__block .block__icon img:hover {
+  transform: scale(1.5);
+}
 .services .myServices__block .block__title {
   font-weight: bold;
   margin-bottom: 8%;
 }
 .services .clients__logoWrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
+}
+.services .clients__logoWrapper .clients__logo {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
 }
 .services .clients__logoWrapper .clients__logo img {
   width: 100px;
   height: 100px;
+}
+.services .clients__logoWrapper .clients__logo:hover {
+  opacity: 1;
 }
 
 .blog {

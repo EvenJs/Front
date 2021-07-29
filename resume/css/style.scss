@@ -285,10 +285,10 @@ span{
         background-position: top 1px left 1px;
       }
 
-
       .skill__web::after {
         background-size: 85% 1em;
       }
+
       .skill__graphic::after {
         background-size: 75% 1em;
       }
@@ -309,8 +309,6 @@ span{
         background-size: 90% 1em;
       }
 
-
-
      /* .skill__container {
         border: 1px solid rgba(0, 0, 0, 0.2);
         height: 10px;
@@ -324,15 +322,9 @@ span{
         width: 50%;
 
       }
-
 */
     }
-
-
   }
-
-  
-
 }
 
 .services {
@@ -380,6 +372,9 @@ span{
           height: 64px;
           width: 64px;
         }
+        img:hover {
+          transform: scale(1.5);
+        }
       }
 
       .block__title {
@@ -393,15 +388,24 @@ span{
 
   .clients__logoWrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+   
 
     .clients__logo {
-      
+      margin: 0 auto;
+
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+      opacity: 0.5;
       img{
         width: 100px;
         height: 100px;
       }
+    }
+    .clients__logo:hover {
+      opacity: 1;
     }
   }
 }
