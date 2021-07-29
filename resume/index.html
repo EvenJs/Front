@@ -4,27 +4,28 @@
   <link rel="stylesheet" href="./css/style.css">
   <meta name=”viewport” content="width=device-width, initial-scale=1" />
   <script defer src="../resume/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+
   <title></title>
 </head>
 
 <body>
   <header>
     <div class="navi"> 
-      <div class="title">John Smith</div>
-      <div >
+      <div class="title">John <span>Smith</span></div>
+      <div class="menuWrapper">
         <ul class="menu">
-          <li>Home</li>
-          <li>Resume</li>
-          <li>Services</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <li id="menuHome">Home</li>
+          <li id="menuResume">Resume</li>
+          <li id="menuServices">Services</li>
+          <li id="menuBlog" >Blog</li>
+          <li id="menuContact">Contact</li>
         </ul>
       </div>
-    </div> 
+    </div>
   </header>
 
   <main>
-    <div class="home hidden">
+    <div class="home hidden" id="homePage">
       <div class="home__heading">
         <div class="photoWrapper">
           <img src="../resume/img/photo.png" alt="John Smith" class="photo">
@@ -41,7 +42,7 @@
       </div>
       <div class="home__content">
         <div class="home__content__aboutMe">
-          <p class="aboutMe__title">About Me</p>
+          <p class="aboutMe__title">About <span>Me</span></p>
           <p class="aboutMe__text"> 
             Hello! I'm John Doe. Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit. Aenean fermentum 
@@ -71,13 +72,12 @@
                 <p class="personalInfo__key">Phone</p>
                 <p class="personalInfo__value"> +0123 123 456 789</p>
               </li>
-
             </ul>
         </div>
       </div>
     </div>
-    <div class="resume hidden">
-      <div class="resume__heading">
+    <div class="resume" id="resumePage">
+      <div class="page__heading">
         <p class="page__title">Resume</p>
       </div>
       <div class="resume__contentWrapper">
@@ -175,7 +175,7 @@
         </div>
       </div>
     </div>
-    <div class="services hidden">
+    <div class="services hidden" id="servicesPage">
       <div class="page__heading"> 
         <p class="page__title">Services</p> 
       </div>
@@ -250,7 +250,7 @@
         </div>
       </div>
     </div>
-    <div class="blog ">
+    <div class="blog hidden" id="blogPage">
       <div class="page__heading">
         <p class="page__title"> Blog</p>
       </div>
@@ -306,7 +306,7 @@
         </div>
       </div>
     </div>
-    <div class="contact hidden">
+    <div class="contact hidden" id="contactPage">
       <div class="page__heading">
         <p class="page__title"> Contact</p>
       </div>
@@ -326,6 +326,8 @@
     </div>
   </main>
 
-  <footer></footer>  
+  <footer>
+    <script defer src="../resume/js/navi.js" ></script>
+  </footer>  
 </body>
 </html>

@@ -13,36 +13,54 @@ main {
   margin: 0 auto;
 }
 
+span{
+  color: rgb(14, 116, 14);
+}
+
 .navi {
   width: 80%;
   display: flex;
-  justify-content: space-between;
-  margin: 0 10%;
-}
+  //justify-content: space-between;
+  //margin: 0 10%;
+  padding: 2% 10%;
+  flex-wrap: wrap;
 
-.title {
-  width: 50%;
-  padding: 0;
-  line-height: 40px;
-}
-
-.menu {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-
-  ul {
-    list-style: none;
+  .title {
+    width: 45%;
+    padding: 0;
     line-height: 40px;
-    margin-left: 0;
+    margin: auto;
+    font-weight: bold;
+  }
+  
+  .menuWrapper{
+    width: 55%;
+    min-width: 350px;
+    margin: 0 auto;
+
+    .menu {
+      width: 100%;
+      display: flex;
+      //justify-content: space-evenly;
+      justify-content: flex-end;
+      text-align: center;
+    
+      ul {
+        list-style: none;
+        line-height: 40px;
+        margin-left: 0;
+      }
+    
+      li {
+        display: block;
+        float: left;
+        margin: 0 3%;
+      }
+    }
   }
 
-  li {
-    display: block;
-    float: left;
-    margin: 2px 10%;
-  }
 }
+
 
 
 .hidden{
@@ -58,7 +76,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: lightgreen;
+    background-color: rgb(23, 185, 23);
     background-image: url("../img/multi-purpose-background.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -74,6 +92,11 @@ main {
       .photo {
         width: 100%;
         height: 100%;
+      }
+      .photo:hover {
+        transform: translate(0, -10px);
+        transition: all 1s;
+        box-shadow:  0px 18px 24px rgba(0, 0, 0, 0.432)
       }
     }
 
@@ -97,13 +120,26 @@ main {
 
       &__media {
         display: flex;
-        //justify-content: space-evenly;
+        justify-content: center;
+        
         a{
           margin: 0 auto;
           display: flex;
           justify-content: center;
           align-items: center;
           text-decoration: none;
+        }
+
+        .fa-facebook-square:hover {
+          transform: scale(1.5);
+        }
+
+        .fa-twitter-square:hover{
+          transform: scale(1.5);
+        }
+
+        .fa-instagram-square:hover{
+          transform:scale(1.5);
         }
       }
     }
@@ -167,10 +203,6 @@ main {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
-
-  &__heading {
-    background-color: lightgreen;
-  }
 
   &__contentWrapper {
     display: flex;
@@ -324,7 +356,7 @@ main {
     flex-wrap: wrap;
 
     .blog__block {
-      max-width: 450px;
+      max-width: 360px;
       text-align: center;
       margin: 2% 0;
       box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
@@ -363,6 +395,10 @@ main {
 }
 
 .contact {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
+
   .page__contentWrapper{
     display: flex;
     justify-content: space-evenly;
@@ -378,7 +414,7 @@ main {
 
 
 .page__heading {
-  background-color: lightgreen;
+  background-color: rgb(14, 116, 14);
   background-image: url("../img/multi-purpose-background.png");
   background-position: center;
   background-repeat: no-repeat;
