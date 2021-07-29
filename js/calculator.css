@@ -1,0 +1,43 @@
+body {
+  background-color: gray;
+}
+
+.wrapper {
+  border: black solid 3px;
+  width: 316px;
+  margin: 10% auto;
+}
+.wrapper .screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+  border: lightgray solid 1px;
+  width: 310px;
+  height: 75px;
+  margin: 2px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.wrapper .row {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: lightgray solid 1px;
+  width: 75px;
+  height: 75px;
+  margin: 2px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.button:hover {
+  background-color: lightseagreen;
+}
+
+/*# sourceMappingURL=calculator.css.map */
