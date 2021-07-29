@@ -61,8 +61,6 @@ span{
 
 }
 
-
-
 .hidden{
   display: none;
 }
@@ -121,7 +119,7 @@ span{
       &__media {
         display: flex;
         justify-content: center;
-        
+
         a{
           margin: 0 auto;
           display: flex;
@@ -206,22 +204,20 @@ span{
 
   &__contentWrapper {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .education {
-
-    &__title{
-      font-size: large;
-      font-weight: bold;
-      padding-left: 8%;
-    }
+    padding-left: 5%;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 0 auto;
 
     &__contentWrapper {
       border-left: gray solid 3px;
       width: 100%;
       padding-top: 1%;
-      margin-left: 5%;
+      //margin-left: 5%;
       padding-bottom: 1%;
 
       .education__block {
@@ -231,21 +227,18 @@ span{
         box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
       }
     }
-
   }
 
   .experience {
-    &__title{
-      font-size: large;
-      font-weight: bold;
-      padding-left: 10%;
-    }
+    padding-left: 5%;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 0 auto;
 
     &__contentWrapper {
       border-left: gray solid 3px;
       width: 100%;
       padding-top: 1%;
-      margin-left: 5%;
       padding-bottom: 1%;
 
       .experience__block{
@@ -258,14 +251,84 @@ span{
   }
 
   &__skills {
-    border: black solid 2px;
     display: flex;
-    justify-content: space-evenly;
-
-    .skill_title {
-      font-size: large;
-      font-weight: bold;
+    padding: 3% 0 2% 5%;
+    flex-wrap: wrap;
+    //justify-content: space-evenly;
+    .skillWrapper {
+      width: 50%;
+      min-width: 330px;
+      padding: 2% 0;
+      margin: 0 auto;
     }
+
+    .skillBlock {
+      display: block;
+      //justify-content: flex-start;
+      padding: 4% 0;
+
+      .skill__name {
+        font-size: small;
+        position: relative;
+      }
+      .skill__name::after{
+        content: '';
+        position: absolute;
+        top: 1.7em;
+        left: 0;
+        width: 90%;
+        height: 90%;
+        border: 1px solid mediumspringgreen;
+        border-radius: 0.2em;
+        background-image: linear-gradient(to right, mediumspringgreen, mediumspringgreen);
+        background-repeat: no-repeat;
+        background-position: top 1px left 1px;
+      }
+
+
+      .skill__web::after {
+        background-size: 85% 1em;
+      }
+      .skill__graphic::after {
+        background-size: 75% 1em;
+      }
+
+      .skill__print::after {
+        background-size: 65% 1em;
+      }
+
+      .skill__html5::after {
+        background-size: 95% 1em;
+      }
+
+      .skill__css3::after {
+        background-size: 70% 1em;
+      }
+
+      .skill__jquery::after {
+        background-size: 90% 1em;
+      }
+
+
+
+     /* .skill__container {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        height: 10px;
+        width: 95.5%;
+        background-color: rgba(0, 0, 0, 0.03);
+        margin-top: 5px;
+      }
+      .skill__filler {
+        height: 100%;
+        background-color: rgb(14, 116, 14);
+        width: 50%;
+
+      }
+
+*/
+    }
+
+
   }
 
   
@@ -432,4 +495,8 @@ span{
 }
 .page__contentWrapper {
   //border: green solid 3px;
+}
+.subTitle {
+  font-weight: bold;
+  font-size: large;
 }

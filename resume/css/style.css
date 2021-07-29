@@ -171,18 +171,18 @@ span {
 }
 .resume__contentWrapper {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.resume .education__title {
-  font-size: large;
-  font-weight: bold;
-  padding-left: 8%;
+.resume .education {
+  padding-left: 5%;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .resume .education__contentWrapper {
   border-left: gray solid 3px;
   width: 100%;
   padding-top: 1%;
-  margin-left: 5%;
   padding-bottom: 1%;
 }
 .resume .education__contentWrapper .education__block {
@@ -191,16 +191,16 @@ span {
   padding-left: 8%;
   box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
 }
-.resume .experience__title {
-  font-size: large;
-  font-weight: bold;
-  padding-left: 10%;
+.resume .experience {
+  padding-left: 5%;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .resume .experience__contentWrapper {
   border-left: gray solid 3px;
   width: 100%;
   padding-top: 1%;
-  margin-left: 5%;
   padding-bottom: 1%;
 }
 .resume .experience__contentWrapper .experience__block {
@@ -210,13 +210,69 @@ span {
   box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
 }
 .resume__skills {
-  border: black solid 2px;
   display: flex;
-  justify-content: space-evenly;
+  padding: 3% 0 2% 5%;
+  flex-wrap: wrap;
 }
-.resume__skills .skill_title {
-  font-size: large;
-  font-weight: bold;
+.resume__skills .skillWrapper {
+  width: 50%;
+  min-width: 330px;
+  padding: 2% 0;
+  margin: 0 auto;
+}
+.resume__skills .skillBlock {
+  display: block;
+  padding: 4% 0;
+  /* .skill__container {
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          height: 10px;
+          width: 95.5%;
+          background-color: rgba(0, 0, 0, 0.03);
+          margin-top: 5px;
+        }
+        .skill__filler {
+          height: 100%;
+          background-color: rgb(14, 116, 14);
+          width: 50%;
+
+        }
+
+  */
+}
+.resume__skills .skillBlock .skill__name {
+  font-size: small;
+  position: relative;
+}
+.resume__skills .skillBlock .skill__name::after {
+  content: "";
+  position: absolute;
+  top: 1.7em;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  border: 1px solid mediumspringgreen;
+  border-radius: 0.2em;
+  background-image: linear-gradient(to right, mediumspringgreen, mediumspringgreen);
+  background-repeat: no-repeat;
+  background-position: top 1px left 1px;
+}
+.resume__skills .skillBlock .skill__web::after {
+  background-size: 85% 1em;
+}
+.resume__skills .skillBlock .skill__graphic::after {
+  background-size: 75% 1em;
+}
+.resume__skills .skillBlock .skill__print::after {
+  background-size: 65% 1em;
+}
+.resume__skills .skillBlock .skill__html5::after {
+  background-size: 95% 1em;
+}
+.resume__skills .skillBlock .skill__css3::after {
+  background-size: 70% 1em;
+}
+.resume__skills .skillBlock .skill__jquery::after {
+  background-size: 90% 1em;
 }
 
 .services {
@@ -338,6 +394,11 @@ span {
   font-weight: bolder;
   font-size: xx-large;
   color: white;
+}
+
+.subTitle {
+  font-weight: bold;
+  font-size: large;
 }
 
 /*# sourceMappingURL=style.css.map */
