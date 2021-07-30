@@ -3,31 +3,33 @@
     <link rel="stylesheet" href="calculator.css">
   </head>
 <body>
-  <div class="wrapper"> 
-    <div class="screen"></div>
-    <div class="row">
-      <div class="button" id="button_7">7</div>
-      <div class="button" id="button_8">8</div>
-      <div class="button" id="button_9">9</div>
-      <div class="button" id="button_*">*</div>
-    </div>
-    <div class="row">    
-      <div class="button" id="button_4">4</div>
-      <div class="button" id="button_5">5</div>
-      <div class="button" id="button_6">6</div>
-      <div class="button" id="button_-">-</div>
-    </div>
-    <div class="row">
-      <div class="button" id="button_1">1</div>
-      <div class="button" id="button_2">2</div>
-      <div class="button" id="button_3">3</div>
-      <div class="button" id="button_+">+</div>
-    </div>
-    <div class="row">
-      <div class="button" id="button_negative">+/-</div>
-      <div class="button" id="button_0">0</div>
-      <div class="button" id="button_.">.</div>
-      <div class="button" id="button_=">=</div>
+  <div class="calculator"> 
+    <div class="screen">0</div>
+    <div class="keys">
+      <button></button>
+      <button data-action="clear">AC</button>
+      <button data-action="square">x2</button>
+      <button data-action="divide">%</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button data-action="multiply">*</button>
+ 
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button  data-action="substract">-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button data-action="plus">+</button>
+
+      <button data-action="">+/-</button>
+      <button>0</button>
+      <button data-action="decimal">.</button>
+      <button data-action="calculate">=</button>
     </div>
   </div>
 

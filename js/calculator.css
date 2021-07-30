@@ -2,12 +2,12 @@ body {
   background-color: gray;
 }
 
-.wrapper {
+.calculator {
   border: black solid 3px;
   width: 316px;
   margin: 10% auto;
 }
-.wrapper .screen {
+.calculator .screen {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -19,11 +19,13 @@ body {
   font-size: xx-large;
   font-weight: bolder;
 }
-.wrapper .row {
+.calculator .keys {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.button {
+button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +38,7 @@ body {
   font-weight: bolder;
 }
 
-.button:hover {
+button:hover {
   background-color: lightseagreen;
 }
 
