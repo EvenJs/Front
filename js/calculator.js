@@ -1,6 +1,6 @@
 const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.keys');
-const display = document.querySelector('.screen')
+const display = calculator.querySelector('.screen')
 
 const calculate = (n1, operator, n2) => {
   let result = ''
@@ -18,7 +18,7 @@ const calculate = (n1, operator, n2) => {
 }
 
 
-keys.addEventListener('click', e=> {
+keys.addEventListener('click', e => {
   if(e.target.matches('button')){
     //console.log('worked')
     const key = e.target;

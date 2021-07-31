@@ -20,9 +20,6 @@ span{
 .navi {
   width: 80%;
   display: flex;
-  //justify-content: space-between;
-  //margin: 0 10%;
-  //padding: 2% 10%;
   margin: 0 auto;
   flex-wrap: wrap;
   margin-top: 2%;
@@ -61,10 +58,16 @@ span{
         float: left;
         margin: 0 3%;
       }
+
+      li:hover {
+        border-bottom: green 1px solid;
+
+      }
     }
   }
-
 }
+
+
 
 .hidden{
   display: none;
@@ -169,7 +172,6 @@ span{
     }
 
     &__detail {
-   
       width: 50%;
       min-width: 210px;
 
@@ -183,12 +185,10 @@ span{
           //justify-content: space-evenly;
           line-height: 5%;
         
-
           .personalInfo__key {
             font-size: small;
             width: 50%;
             margin-right: 5%;
-
           }
 
           .personalInfo__value {
@@ -225,10 +225,22 @@ span{
 
       .education__block {
         position: relative;
+        border-radius: 5px;
         border-left:green solid 3px ;
         margin: 5%;
         padding-left: 7%;
         box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
+
+        &__title {
+          font-weight: bold;
+          font-size: small;
+          padding: 1% 0;
+        }
+
+        &__info {
+          font-size: smaller;
+          padding: 1% 0;
+        }
       }
 
       .education__block:hover {
@@ -277,8 +289,20 @@ span{
         border-left:green solid 3px ;
         margin: 5%;
         padding-left: 8%;
+        border-radius: 5px;
         box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.15);
         position: relative;
+
+        &__title {
+          font-weight: bold;
+          font-size: small;
+          padding: 1% 0;
+        }
+
+        &__info {
+          font-size: smaller;
+          padding: 1% 0;
+        }
       }
 
       .experience__block:hover {
