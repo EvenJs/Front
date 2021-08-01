@@ -2,6 +2,7 @@ const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.keys');
 const display = calculator.querySelector('.screen')
 
+//calculate function for + - * %
 const calculate = (n1, operator, n2) => {
   let result = ''
   if (operator === 'plus') {
@@ -29,17 +30,29 @@ keys.addEventListener('click', e => {
     const previousKeyType = calculator.dataset.previousKeyType;
 
     if(!action){
-      if(displayedNum === '0' || previousKeyType ==='operator') {
+      if(displayedNum === '0' || previousKeyType ==='operator'|| previousKeyType ==='calculate') {
         display.textContent = keyContent;
       } else {
         display.textContent = displayedNum + keyContent;
       }
+
+      calculator.dataset.previousKeyType = 'number';
+      console.log(calculator.dataset.previousKeyType);
     }
 
+    //when user click decimal button
     if(action === 'decimal') {
-      display.textContent = displayedNum + '.';
+      //only can have one decimal
+      if ( !displayedNum.includes('.') && !previousKeyType === 'operator') {
+        display.textContent = displayedNum + '.';
+      } else if (previousKeyType === 'operator') {
+        display.textContent = '0.';
+      }
+      
+      calculator.dataset.previousKeyType = 'decimal';
     }
 
+    //if user click operator button (+,-,*,%)
     if (
       action === 'plus' ||
       action === 'substract' ||
@@ -49,11 +62,15 @@ keys.addEventListener('click', e => {
       calculator.dataset.firstValue = displayedNum;
       calculator.dataset.operator = action;
       calculator.dataset.previousKeyType = 'operator';
-      console.log('worked')
+      console.log(calculator.dataset.previousKeyType);
+      //console.log('worked')
     }
-
+    //when user click clear button
     if (action ==='clear') {
-      console.log('clear');
+      display.textContent = '0';
+
+      calculator.dataset.previousKeyType = 'clear';
+      console.log(calculator.dataset.previousKeyType);
     }
 
     
@@ -61,9 +78,12 @@ keys.addEventListener('click', e => {
       const firstValue  = calculator.dataset.firstValue;
       const operator = calculator.dataset.operator;
       const secondValue = displayedNum;
-      
+
       display.textContent = calculate(firstValue, operator, secondValue);
+      calculator.dataset.previousKeyType = 'calculate';
+      console.log(calculator.dataset.previousKeyType);
     } 
 
   }
 })
+
