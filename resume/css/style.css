@@ -1,8 +1,13 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1200px;
   min-width: 400px;
   margin: 0 auto;
-  background-image: url("../img/main_bg.png");
+  background-image: url("./img/main_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -55,8 +60,17 @@ span {
   float: left;
   margin: 0 3%;
 }
-.navi .menuWrapper .menu li:hover {
-  border-bottom: green 1px solid;
+.navi .menuWrapper .menu li::after {
+  content: "";
+  border-bottom: 2px solid green;
+  width: 0;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  margin: 3px auto 0;
+}
+.navi .menuWrapper .menu li:hover::after {
+  width: 25px;
+  text-align: center;
 }
 
 .hidden {
@@ -70,7 +84,7 @@ span {
 }
 .home__heading {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   background-color: #17b917;
   background-image: url("../img/multi-purpose-background.png");
@@ -79,7 +93,8 @@ span {
   background-size: cover;
 }
 .home__heading .photoWrapper {
-  margin: 3% 0;
+  margin-top: 5%;
+  margin-bottom: -2%;
   height: 37.3%;
   width: 26%;
   min-height: 180px;
@@ -115,11 +130,12 @@ span {
   justify-content: center;
 }
 .home__heading .intro__media a {
-  margin: 0 auto;
+  margin: 0 4%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  color: #036e92;
 }
 .home__heading .intro__media .fa-facebook-square:hover {
   transform: scale(1.5);
@@ -134,6 +150,7 @@ span {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  margin-top: 3%;
 }
 .home__content__aboutMe {
   max-width: 45%;
@@ -565,6 +582,13 @@ span {
 .subTitle {
   font-weight: bold;
   font-size: large;
+}
+
+.icon__bg {
+  background-color: white;
+  border-radius: 35%;
+  height: 40px;
+  width: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

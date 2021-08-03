@@ -1,8 +1,13 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1200px;  
   min-width: 400px;
   margin: 0 auto;
-  background-image:url("../img/main_bg.png");
+  background-image:url("./img/main_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
@@ -58,16 +63,23 @@ span{
         float: left;
         margin: 0 3%;
       }
+      
+      li::after {
+        content: '';
+        border-bottom: 2px solid green;
+        width: 0;
+        display: block;
+        transition: all 0.5s ease-in-out;
+        margin: 3px auto 0;
+      }
 
-      li:hover {
-        border-bottom: green 1px solid;
-
+      li:hover::after {
+        width: 25px;
+        text-align: center;
       }
     }
   }
 }
-
-
 
 .hidden{
   display: none;
@@ -80,7 +92,7 @@ span{
 
   &__heading {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-color: rgb(23, 185, 23);
     background-image: url("../img/multi-purpose-background.png");
@@ -89,7 +101,8 @@ span{
     background-size: cover;
 
     .photoWrapper {
-      margin: 3% 0;
+      margin-top: 5%;
+      margin-bottom: -2%;
       height: 37.3%;
       width: 26%;
       min-height: 180px;
@@ -129,11 +142,12 @@ span{
         justify-content: center;
 
         a{
-          margin: 0 auto;
+          margin: 0 4%;
           display: flex;
           justify-content: center;
           align-items: center;
           text-decoration: none;
+          color:rgb(3, 110, 146);
         }
 
         .fa-facebook-square:hover {
@@ -155,6 +169,7 @@ span{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    margin-top: 3%;
 
     &__aboutMe {
       max-width: 45%;
@@ -674,4 +689,11 @@ span{
 .subTitle {
   font-weight: bold;
   font-size: large;
+}
+
+.icon__bg {
+  background-color: white;
+  border-radius: 35%;
+  height: 40px;
+  width: 40px;
 }
