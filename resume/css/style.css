@@ -218,7 +218,7 @@ span {
   flex-wrap: wrap;
 }
 .resume .education {
-  padding-left: 5%;
+  padding-left: 1%;
   min-width: 300px;
   max-width: 400px;
   margin: 0 auto;
@@ -244,6 +244,16 @@ span {
 .resume .education__contentWrapper .education__block__info {
   font-size: smaller;
   padding: 1% 0;
+}
+.resume .education__contentWrapper .education__block .education__year {
+  font-size: xx-small;
+}
+.resume .education__contentWrapper .education__block .education__divider {
+  border-right: 1px solid #dadada;
+}
+.resume .education__contentWrapper .education__block .education__company {
+  font-size: xx-small;
+  color: #49515d;
 }
 .resume .education__contentWrapper .education__block:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
@@ -272,7 +282,6 @@ span {
   top: 25px;
 }
 .resume .experience {
-  padding-left: 3%;
   min-width: 300px;
   max-width: 400px;
   margin: 0 auto;
@@ -294,6 +303,16 @@ span {
   font-weight: bold;
   font-size: small;
   padding: 1% 0;
+}
+.resume .experience__contentWrapper .experience__block .experience__year {
+  font-size: xx-small;
+}
+.resume .experience__contentWrapper .experience__block .experience__divider {
+  border-right: 1px solid #dadada;
+}
+.resume .experience__contentWrapper .experience__block .experience__company {
+  font-size: xx-small;
+  color: #49515d;
 }
 .resume .experience__contentWrapper .experience__block__info {
   font-size: smaller;
@@ -452,6 +471,8 @@ span {
   flex-wrap: wrap;
 }
 .blog .page__contentWrapper .blog__block {
+  overflow: hidden;
+  border-radius: 3px;
   max-width: 360px;
   text-align: center;
   margin: 2% 0;

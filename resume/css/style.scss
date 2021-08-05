@@ -254,7 +254,7 @@ span{
   }
 
   .education {
-    padding-left: 5%;
+    padding-left: 1%;
     min-width: 300px;
     max-width: 400px;
     margin: 0 auto;
@@ -281,6 +281,18 @@ span{
         &__info {
           font-size: smaller;
           padding: 1% 0;
+        }
+        .education__year {
+          font-size: xx-small;
+        }
+
+        .education__divider { 
+          border-right: 1px solid #dadada;
+        }
+
+        .education__company {
+          font-size: xx-small;
+          color: #49515d;
         }
       }
 
@@ -316,7 +328,6 @@ span{
   }
 
   .experience {
-    padding-left: 3%;
     min-width: 300px;
     max-width: 400px;
     margin: 0 auto;
@@ -340,6 +351,18 @@ span{
           padding: 1% 0;
         }
 
+        .experience__year {
+          font-size: xx-small;
+        }
+
+        .experience__divider { 
+          border-right: 1px solid #dadada;
+        }
+
+        .experience__company {
+          font-size: xx-small;
+          color: #49515d;
+        }  
         &__info {
           font-size: smaller;
           padding: 1% 0;
@@ -451,10 +474,6 @@ span{
 
   .myServices__title {
     font-weight: bolder;
-
-  &__myServices {
-
-    }
   }
 
   .myServices {
@@ -533,6 +552,8 @@ span{
     flex-wrap: wrap;
 
     .blog__block {
+      overflow: hidden;
+      border-radius: 3px;
       max-width: 360px;
       text-align: center;
       margin: 2% 0;
@@ -567,9 +588,6 @@ span{
         font-weight: bold;
         margin-bottom: 5%;
       }
-
-      //.blog__block__image:hover {}
-
     }
 
     .blog__block:hover {
