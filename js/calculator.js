@@ -2,6 +2,16 @@ const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.keys');
 const display = calculator.querySelector('.screen')
 
+
+const pressNumber = (currentInput,previousKeyType)=> {
+  if(currentInput=== '0' || previousKeyType ==='operator'|| previousKeyType ==='calculate') {
+    return keyContent;
+  } else {
+    return currentInput + keyContent;
+  }
+  calculator.dataset.previousKeyType = 'number';
+}
+
 //calculate function for + - * %;
 const calculate = (n1, operator, n2) => {
   let result = ''
@@ -36,10 +46,10 @@ const calculate = (n1, operator, n2) => {
 }
 
 //operator function;
-const pressOperator = () => {
-  if(displayedNum === 0 || ) {}
+//const pressOperator = () => {
+//  if(displayedNum === 0 || ) {}
 
-}
+//}
 
 
 

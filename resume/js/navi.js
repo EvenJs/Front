@@ -36,6 +36,11 @@ const contactPage = document.getElementById('contactPage');
 
 menuHome.addEventListener('click', function(){
   homePage.classList.remove('hidden');
+  menuHome.classList.add('active')
+  menuResume.classList.remove('active');
+  menuServices.classList.remove('active');
+  menuBlog.classList.remove('active');
+  menuContact.classList.remove('active');
   resumePage.classList.add('hidden');
   servicesPage.classList.add('hidden');
   blogPage.classList.add('hidden');
@@ -48,6 +53,11 @@ menuResume.addEventListener('click', function(){
   servicesPage.classList.add('hidden');
   blogPage.classList.add('hidden');
   contactPage.classList.add('hidden');
+  menuResume.classList.add('active');
+  menuHome.classList.remove('active');
+  menuServices.classList.remove('active');
+  menuBlog.classList.remove('active');
+  menuContact.classList.remove('active');
 })
 
 menuServices.addEventListener('click', function(){
@@ -56,6 +66,11 @@ menuServices.addEventListener('click', function(){
   homePage.classList.add('hidden');
   blogPage.classList.add('hidden');
   contactPage.classList.add('hidden');
+  menuServices.classList.add('active');
+  menuHome.classList.remove('active');
+  menuBlog.classList.remove('active');
+  menuResume.classList.remove('active');
+  menuContact.classList.remove('active');
 })
 
 menuBlog.addEventListener('click', function(){
@@ -64,6 +79,11 @@ menuBlog.addEventListener('click', function(){
   servicesPage.classList.add('hidden');
   homePage.classList.add('hidden');
   contactPage.classList.add('hidden');
+  menuBlog.classList.add('active');
+  menuHome.classList.remove('active');
+  menuServices.classList.remove('active');
+  menuResume.classList.remove('active');
+  menuContact.classList.remove('active');
 })
 
 menuContact.addEventListener('click', function(){
@@ -72,4 +92,9 @@ menuContact.addEventListener('click', function(){
   servicesPage.classList.add('hidden');
   blogPage.classList.add('hidden');
   homePage.classList.add('hidden');
+  menuContact.classList.add('active');
+  menuHome.classList.remove('active');
+  menuServices.classList.remove('active');
+  menuResume.classList.remove('active');
+  menuBlog.classList.remove('active');
 })

@@ -1,3 +1,7 @@
+:root {
+  --dark-green: rgb(14, 116, 14);
+}
+
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -49,18 +53,26 @@ span {
   display: flex;
   justify-content: flex-end;
   text-align: center;
+  font-weight: bold;
 }
 .navi .menuWrapper .menu ul {
   list-style: none;
   line-height: 40px;
   margin-left: 0;
 }
-.navi .menuWrapper .menu li {
+.navi .menuWrapper .menu .navi_item {
   display: block;
   float: left;
   margin: 0 3%;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
 }
-.navi .menuWrapper .menu li::after {
+.navi .menuWrapper .menu .navi_item:hover, .navi .menuWrapper .menu .active {
+  opacity: 1;
+}
+.navi .menuWrapper .menu .navi_item::after {
   content: "";
   border-bottom: 2px solid green;
   width: 0;
@@ -68,8 +80,8 @@ span {
   transition: all 0.5s ease-in-out;
   margin: 3px auto 0;
 }
-.navi .menuWrapper .menu li:hover::after {
-  width: 25px;
+.navi .menuWrapper .menu .navi_item:hover::after, .navi .menuWrapper .menu .active::after {
+  width: 35px;
   text-align: center;
 }
 
@@ -86,7 +98,7 @@ span {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: #17b917;
+  background-color: var(--dark-green);
   background-image: url("../img/multi-purpose-background.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -97,21 +109,25 @@ span {
   margin-bottom: -2%;
   height: 37.3%;
   width: 26%;
-  min-height: 180px;
-  min-width: 180px;
+  min-height: 200px;
+  min-width: 200px;
+  border: 2px solid white;
+  border-radius: 3px;
 }
 .home__heading .photoWrapper .photo {
   width: 100%;
   height: 100%;
 }
-.home__heading .photoWrapper .photo:hover {
+.home__heading .photoWrapper:hover {
   transform: translate(0, -10px);
   transition: all 1s;
   box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.432);
 }
 .home__heading .intro {
-  width: 35%;
-  padding-right: 3%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  min-width: 315px;
   color: white;
   text-align: center;
   min-width: 210px;
@@ -128,6 +144,7 @@ span {
 .home__heading .intro__media {
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 }
 .home__heading .intro__media a {
   margin: 0 4%;
@@ -135,7 +152,7 @@ span {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #036e92;
+  color: rgba(6, 241, 182, 0.836);
 }
 .home__heading .intro__media .fa-facebook-square:hover {
   transform: scale(1.5);
@@ -148,13 +165,14 @@ span {
 }
 .home__content {
   display: flex;
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
   margin-top: 3%;
 }
 .home__content__aboutMe {
-  max-width: 45%;
-  min-width: 210px;
+  width: 50%;
+  min-width: 270px;
   padding-left: 5%;
 }
 .home__content__aboutMe .aboutMe__title {
@@ -166,7 +184,7 @@ span {
 }
 .home__content__detail {
   width: 50%;
-  min-width: 210px;
+  min-width: 270px;
 }
 .home__content__detail ul {
   list-style: none;
@@ -175,16 +193,18 @@ span {
 }
 .home__content__detail ul li {
   display: flex;
-  line-height: 5%;
+  margin: 0 auto;
 }
 .home__content__detail ul li .personalInfo__key {
   font-size: small;
   width: 50%;
+  margin: 1% auto;
   margin-right: 5%;
 }
 .home__content__detail ul li .personalInfo__value {
   width: 100%;
   font-size: small;
+  margin: 1% auto;
   color: gray;
 }
 
@@ -319,20 +339,6 @@ span {
 .resume__skills .skillBlock {
   display: block;
   padding: 4% 0;
-  /* .skill__container {
-          border: 1px solid rgba(0, 0, 0, 0.2);
-          height: 10px;
-          width: 95.5%;
-          background-color: rgba(0, 0, 0, 0.03);
-          margin-top: 5px;
-        }
-        .skill__filler {
-          height: 100%;
-          background-color: rgb(14, 116, 14);
-          width: 50%;
-
-        }
-  */
 }
 .resume__skills .skillBlock .skill__name {
   font-size: small;
@@ -548,7 +554,7 @@ span {
   border-bottom: darkgray solid 3px;
 }
 .contact .page__contentWrapper .formWrapper .sendButton {
-  background-color: lightgreen;
+  background-color: var(--dark-green);
   border: none;
   border-radius: 5%;
   color: white;
@@ -559,7 +565,7 @@ span {
   padding: 1% 3%;
 }
 .contact .page__contentWrapper .formWrapper .sendButton:hover {
-  background-color: darkgreen;
+  background-color: lightgreen;
 }
 
 .page__heading {
